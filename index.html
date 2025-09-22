@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips Belajar & Manajemen Waktu</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content fade-in">
+            <h1 class="hero-title">Tips Belajar & Manajemen Waktu</h1>
+            <h2 class="hero-subtitle">
+                Untuk Cian <span class="hero-heart">💖</span> di tengah padatnya perkuliahan
+            </h2>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="tips-container">
+            <!-- Study Tips Card -->
+            <div class="tips-card study-tips fade-in" style="animation-delay: 0.2s">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h2 class="card-title">Tips Belajar Efektif</h2>
+                </div>
+                <div class="card-content">
+                    <div class="tip-item">
+                        <span class="tip-number">1</span>
+                        <div class="tip-text">
+                            <div class="tip-title">Buat Jadwal Belajar</div>
+                            <div class="tip-description">Tentukan waktu khusus setiap hari untuk belajar mandiri dengan konsisten</div>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-number">2</span>
+                        <div class="tip-text">
+                            <div class="tip-title">Gunakan Teknik Pomodoro</div>
+                            <div class="tip-description">Belajar selama 25 menit, istirahat 5 menit. <span class="tip-emoji">JANGAN MALAH KETERUSAN TIDUR!!</span></div>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-number">3</span>
+                        <div class="tip-text">
+                            <div class="tip-title">Pelajari Materi Sebelum Kelas</div>
+                            <div class="tip-description">Biar gak kaget nanti kalau dosen ngejelasin. <span class="tip-emoji">biar gak kayak aku hehe 👉👈</span></div>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-number">4</span>
+                        <div class="tip-text">
+                            <div class="tip-title">Gunakan Sumber Tambahan</div>
+                            <div class="tip-description">Bisa pakai YouTube, Google, jurnal, atau bisa juga nanya ke aku <span class="tip-emoji">xixixi ><</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Time Management Tips Card -->
+            <div class="tips-card fade-in" style="animation-delay: 0.4s">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h2 class="card-title">Tips Manajemen Waktu</h2>
+                </div>
+                <div class="card-content">
+                    <div class="tip-item">
+                        <span class="tip-number">1</span>
+                        <div class="tip-text">
+                            <div class="tip-title">Prioritaskan Tugas & Kuliah</div>
+                            <div class="tip-description">Pakai metode skala prioritas untuk menentukan mana yang harus diutamakan terlebih dahulu</div>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-number">2</span>
+                        <div class="tip-text">
+                            <div class="tip-title">Hindari Multitasking</div>
+                            <div class="tip-description">Fokus pada satu tujuan/tugas biar lebih efisien, <span class="tip-emoji">biar gak kyk aku semuanya jadi nanggung wkwk</span></div>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-number">3</span>
+                        <div class="tip-text">
+                            <div class="tip-title">Gunakan Kalender Digital</div>
+                            <div class="tip-description">Seperti Google Calendar untuk mengatur deadline tugas dan pengingat</div>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-number">4</span>
+                        <div class="tip-text">
+                            <div class="tip-title">Istirahat yang Cukup</div>
+                            <div class="tip-description">Kurang tidur dapat menyebabkan sakit kepala dan memicu berbagai penyakit. <span class="tip-emoji">KAMU JANGAN KEBANYAKAN BEGADANG!!!</span></div>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-number">5</span>
+                        <div class="tip-text">
+                            <div class="tip-title">Kurangi Aktivitas yang Tidak Perlu</div>
+                            <div class="tip-description">Ini sih sebenarnya opsional ya <span class="tip-emoji">wkwkwk</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Progress Section -->
+        <div class="progress-section fade-in" style="animation-delay: 0.6s">
+            <h3 class="progress-title">Progress Belajar Hari Ini</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar"></div>
+            </div>
+            <p class="progress-text" id="progressText">Mulai perjalanan belajarmu hari ini!</p>
+            
+            <!-- Current Target Display -->
+            <div class="current-target" id="currentTarget">
+                <div class="target-icon">🎯</div>
+                <div class="target-content">
+                    <div class="target-title" id="targetTitle">Siap nggak luwhh?</div>
+                    <div class="target-description" id="targetDescription">Klik 'Tambah Progress' untuk memulai sayang!</div>
+                </div>
+            </div>
+
+            <button class="progress-btn" onclick="updateProgress()">Tambah Progress</button>
+            <button class="progress-btn" onclick="resetProgress()">Reset</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content fade-in" style="animation-delay: 0.8s">
+            <p class="footer-text">© Copyright by natann_strs for his cian (Ny. Monica Helena br.Tambunan)</p>
+            <p class="footer-love">Love you honey <span class="footer-heart">💖</span></p>
+        </div>
+    </footer>
+
+    <!-- Reward Notification Modal -->
+    <div class="reward-overlay" id="rewardOverlay">
+        <div class="reward-popup" id="rewardPopup">
+            <div class="reward-sticker" id="rewardSticker">🎉</div>
+            <h2 class="reward-title">Selamat Sayang!</h2>
+            <p class="reward-message">Kamu berhasil menyelesaikan target belajar hari ini!</p>
+            <p class="reward-message">HOREEE!! ><</p>
+            <div class="reward-stats" id="rewardStats">
+                🌟 Progress: 100% Completed!<br>
+                ⏰ Keep up the great work!
+            </div>
+            <button class="reward-close-btn" onclick="closeReward()">Klik ini sayang! 😍 🎁</button>
+        </div>
+    </div>
+
+    <script>
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 20;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.width = Math.random() * 6 + 4 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 4 + 4) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Progress bar functionality
+        let currentProgress = 0;
+        const celebrationStickers = ['🎉', '🎊', '🥳', '🌟', '✨', '🏆', '👏', '🎈', '🎁', '💖'];
+
+        // Target data based on HTML content
+        const targets = [
+            {
+                title: "Siap untuk memulai?",
+                description: "Klik 'Tambah Progress' untuk memulai sesi belajar pertama!",
+                icon: "🎯",
+                class: ""
+            },
+            {
+                title: "📚 Buat Jadwal Belajar",
+                description: "Tentukan waktu khusus setiap hari untuk belajar mandiri dengan konsisten",
+                icon: "📅",
+                class: "study-tips"
+            },
+            {
+                title: "🍅 Gunakan Teknik Pomodoro",
+                description: "Belajar selama 25 menit, istirahat 5 menit. JANGAN MALAH KETERUSAN TIDUR!!",
+                icon: "⏰",
+                class: "study-tips"
+            },
+            {
+                title: "📖 Pelajari Materi Sebelum Kelas",
+                description: "Biar gak kaget nanti kalau dosen ngejelasin. biar gak kayak aku hehe 👉👈",
+                icon: "📝",
+                class: "time-management"
+            },
+            {
+                title: "🔍 Gunakan Sumber Tambahan",
+                description: "Bisa pakai YouTube, Google, jurnal, atau bisa juga nanya ke aku xixixi ><",
+                icon: "💡",
+                class: "time-management"
+            },
+            {
+                title: "🎊 Target Tercapai!",
+                description: "Selamat! Kamu sudah menyelesaikan semua target belajar hari ini! Time for reward! 🎁",
+                icon: "🏆",
+                class: "completed"
+            }
+        ];
+
+        function updateProgress() {
+            if (currentProgress < 100) {
+                currentProgress += 20;
+                const progressIndex = currentProgress / 20;
+                
+                // Update progress bar
+                document.getElementById('progressBar').style.width = currentProgress + '%';
+                
+                // Update progress text
+                const progressText = document.getElementById('progressText');
+                const progressMessages = [
+                    'Bagus! Kamu sudah mulai belajar hari ini! 🎉',
+                    'Terus semangat! Kamu sudah di jalur yang tepat! 💪', 
+                    'Wah, progressnya sudah lumayan nih! 🔥',
+                    'Hampir selesai! Sedikit lagi kamu bisa istirahat! ⭐',
+                    'Target tercapai! Siap-siap dapat reward! 🎊'
+                ];
+                progressText.textContent = progressMessages[progressIndex - 1];
+                
+                // Update target display
+                updateCurrentTarget(progressIndex);
+                
+                // Add celebration particles for each progress step
+                createCelebrationParticles();
+                
+                // Show reward when completed
+                if (currentProgress === 100) {
+                    setTimeout(showReward, 1000);
+                }
+            }
+        }
+
+        function updateCurrentTarget(progressIndex) {
+            const targetElement = document.getElementById('currentTarget');
+            const targetIcon = targetElement.querySelector('.target-icon');
+            const targetTitle = document.getElementById('targetTitle');
+            const targetDescription = document.getElementById('targetDescription');
+            
+            const currentTarget = targets[progressIndex];
+            
+            // Update content
+            targetIcon.textContent = currentTarget.icon;
+            targetTitle.textContent = currentTarget.title;
+            targetDescription.textContent = currentTarget.description;
+            
+            // Update class for styling
+            targetElement.className = `current-target ${currentTarget.class}`;
+            
+            // Add percentage display
+            let percentageElement = targetElement.querySelector('.progress-percentage');
+            if (!percentageElement) {
+                percentageElement = document.createElement('div');
+                percentageElement.className = 'progress-percentage';
+                targetElement.appendChild(percentageElement);
+            }
+            percentageElement.textContent = `${currentProgress}%`;
+            
+            // Add entrance animation
+            targetElement.style.transform = 'scale(0.8)';
+            targetElement.style.opacity = '0.7';
+            
+            setTimeout(() => {
+                targetElement.style.transform = 'scale(1)';
+                targetElement.style.opacity = '1';
+            }, 100);
+        }
+
+        function resetProgress() {
+            currentProgress = 0;
+            document.getElementById('progressBar').style.width = '0%';
+            document.getElementById('progressText').textContent = 'Mulai perjalanan belajarmu hari ini!';
+            
+            // Reset target display
+            updateCurrentTarget(0);
+        }
+
+        // Show reward notification
+        function showReward() {
+            const overlay = document.getElementById('rewardOverlay');
+            const popup = document.getElementById('rewardPopup');
+            const sticker = document.getElementById('rewardSticker');
+            
+            // Random celebration sticker
+            const randomSticker = celebrationStickers[Math.floor(Math.random() * celebrationStickers.length)];
+            sticker.textContent = randomSticker;
+            
+            // Show overlay
+            overlay.classList.add('show');
+            
+            // Create confetti effect
+            createConfetti();
+            
+            // Play celebration sound effect (visual feedback)
+            createSoundEffect();
+        }
+
+        // Close reward notification
+        function closeReward() {
+            const overlay = document.getElementById('rewardOverlay');
+            overlay.classList.remove('show');
+            
+            // Optional: Auto reset progress after closing reward
+            setTimeout(resetProgress, 500);
+        }
+
+        // Create confetti animation
+        function createConfetti() {
+            const popup = document.getElementById('rewardPopup');
+            const colors = ['#ff6b9d', '#4facfe', '#43e97b', '#fa709a', '#fee140', '#a8edea', '#fed6e3'];
+            
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.animationDelay = Math.random() * 3 + 's';
+                confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                popup.appendChild(confetti);
+                
+                // Remove confetti after animation
+                setTimeout(() => {
+                    if (confetti.parentNode) {
+                        confetti.parentNode.removeChild(confetti);
+                    }
+                }, 5000);
+            }
+        }
+
+        // Create celebration particles
+        function createCelebrationParticles() {
+            const progressSection = document.querySelector('.progress-section');
+            const colors = ['#667eea', '#764ba2', '#f093fb', '#4facfe'];
+            
+            for (let i = 0; i < 10; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'celebration-particle';
+                particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+                particle.style.left = '50%';
+                particle.style.top = '50%';
+                particle.style.setProperty('--random-x', (Math.random() - 0.5) * 200 + 'px');
+                particle.style.setProperty('--random-y', (Math.random() - 0.5) * 200 + 'px');
+                
+                progressSection.appendChild(particle);
+                
+                // Remove particle after animation
+                setTimeout(() => {
+                    if (particle.parentNode) {
+                        particle.parentNode.removeChild(particle);
+                    }
+                }, 2000);
+            }
+        }
+
+        // Visual sound effect (screen flash)
+        function createSoundEffect() {
+            const body = document.body;
+            body.style.background = 'linear-gradient(135deg, #fff 0%, #f0f8ff 50%, #fff 100%)';
+            
+            setTimeout(() => {
+                body.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)';
+            }, 200);
+        }
+
+        // Close reward when clicking outside popup
+        document.getElementById('rewardOverlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeReward();
+            }
+        });
+
+        // Close reward with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeReward();
+            }
+        });
+
+        // Add hover effects to tip items
+        document.querySelectorAll('.tip-item').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateX(10px) scale(1.02)';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateX(0) scale(1)';
+            });
+        });
+
+        // Initialize particles when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            createParticles();
+            
+            // Add staggered animation to cards
+            const cards = document.querySelectorAll('.fade-in');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+        });
+
+        // Add smooth scrolling for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
